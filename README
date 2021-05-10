@@ -1,1 +1,44 @@
+project objectives:
+    1) webscraping 
+    2) recipe model
+    3) database management
+
+webscraping:
+    using HtmlAgilityPack for loading and parcing HTML
+
+recipe model:
+    in the model folder the recepe class defines an object and manages its methods and properties
+
+database management:
+    using google.cloud.firebase for connecting to the database and updating entries.
+
+
+grading requirements search keywords:
+***** programming tecniques below are tagged withthe comment REQUIREMENT *****
+Loops (convertListToStr)
+Methods (gethtml)
+Classes (Model.recipe)
+Inheritance
+Strings, Array or Lists (convertStrToList)
+Model-View-Controller (MVC) software architecture
+Multithreading (Submit)
+Searching and Sorting, or LINQ (convertStrToList)
+Exception Handling (gethtml)
+
+
+
+
+interface and useability.
+1) execute
+2) change the ID field to any 5 digit number
+    >> ID must be a 5 digit number
+3) click Search
+    >> will populate the page with recipe information
+    >> make suer that all network interferince are off for example a vpn might not allow pictures to show
+4) read over Ingredients and Instruction and edit if need be.
+5) click submit 
+    >> a message box will show with the JSON obj being submited to the databse.
+6) goto (2)
+
+***** VIDEOS OF TESTING ARE IN THE VIDS FOLDER *****
 
