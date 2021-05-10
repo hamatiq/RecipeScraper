@@ -1,0 +1,50 @@
+﻿<Window x:Class="RecipeScraper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeScraper"
+        mc:Ignorable="d"
+        Height="700" Width="920"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        >
+
+    <Border Background="#272537">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="Ingredients:" Foreground="white" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="350" Height="45" FontSize="25"  />
+            <TextBox x:Name="Ingreds" HorizontalAlignment="Center" Margin="0,65,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Height="272" Background="Transparent" Foreground="White" FontSize="20" BorderThickness="0"/>
+            <Label Content="Instruction:" Grid.Row="1" Foreground="white" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="350" Height="45" FontSize="25"/>
+            <TextBox Name="Instruction" Grid.Row="1" HorizontalAlignment="Center" Margin="0,65,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="440" Height="261" Background="Transparent" Foreground="White" FontSize="20" BorderThickness="0"/>
+            <TextBlock Text="Name:" Grid.Column="1" Foreground="white" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="350" Height="38" FontSize="25" TextAlignment="Center" />
+            <Border BorderThickness="1" BorderBrush="Black" Grid.Column="1" Margin="10,53,10,10" CornerRadius="15">
+                <!--fill image of the recipe-->
+                <Image Name="Img" Margin="7,7,7,7" Stretch="Fill"/>
+            </Border>
+            <Border CornerRadius="20" BorderThickness="1" BorderBrush="Black" Grid.Column="1" HorizontalAlignment="Center" Height="311" Grid.Row="1" VerticalAlignment="Top" Width="350" Margin="0,10,0,0">
+                <Border Height="60" VerticalAlignment="Top" HorizontalAlignment="Center" Width="234" Margin="0,9,0,0" CornerRadius="20" BorderThickness="1" BorderBrush="Black" Background="DarkCyan">
+                    <Button Content="Submit" Background="Transparent" FontSize="20" Foreground="Black" BorderThickness="0" Click="Submit"/>
+                </Border>
+
+            </Border>
+            <TextBox Grid.Column="1" HorizontalAlignment="Center" Margin="0,170,0,0" Grid.Row="1" Text="ID" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="40" BorderThickness="0" Background="Transparent" FontSize="20" TextAlignment="Center" Foreground="White" Name="ID"/>
+            <Border Grid.Row="1" Grid.Column="1" Height="60" VerticalAlignment="Top" HorizontalAlignment="Center" Width="234" Margin="0,215,0,0" CornerRadius="20" BorderThickness="1" BorderBrush="Black" Background="DarkCyan">
+                <Button Content="Search" Background="Transparent" FontSize="20" Foreground="Black" BorderThickness="0" Click="Search"/>
+            </Border>
+        </Grid>
+
+
+
+
+    </Border>
+</Window>
